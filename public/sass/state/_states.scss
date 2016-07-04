@@ -1,0 +1,39 @@
+/******************************************************************************
+ * Document States
+*******************************************************************************/
+.is-neverflow {
+    overflow: hidden;
+}
+
+.is-clipped {
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.is-scrolling {
+    pointer-events: none;
+}
+
+.is-scrolling-up {}
+
+.is-scrolling-down {}
+
+.is-menu-open {
+    .page {
+        pointer-events: none;
+        }
+}
+
+
+
+/******************************************************************************
+ * Cover Pages / Posters
+*******************************************************************************/
+.is-cover-page {}
+.is-cover-page--dark {
+    background-color: $true-black;
+    }
+.is-cover-poster {}
+.is-cover-moment {}
+.is-cover-light {}

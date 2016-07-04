@@ -1,0 +1,125 @@
+/******************************************************************************
+ * Meta Data
+*******************************************************************************/
+.meta {
+    @include meta();
+    }
+
+
+/******************************************************************************
+ * Paragraphs
+*******************************************************************************/
+.p {
+    @include p();
+    }
+.ol,
+.ul {
+    @include li();
+    }
+.ol li {
+    @include ol-li();
+    }
+.ul li {
+    @include ul-li();
+    }
+
+
+/******************************************************************************
+ * Buttons
+*******************************************************************************/
+.btn {
+    box-shadow: rgba(0, 0, 0, 0) 0 0px 0px 0px inset;
+    background-color: transparent;
+    border: 1px solid $grey-rule;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    margin: 16px 0;
+    outline: 0;
+    padding: 12px 16px;
+    text-align: left;
+    -webkit-appearance: none;
+    transition: box-shadow 0.3s cubic-bezier(0.390, 0.500, 0.150, 1), border 0.3s cubic-bezier(0.390, 0.500, 0.150, 1), color 0.3s cubic-bezier(0.390, 0.500, 0.150, 1);
+
+    &:hover {
+        box-shadow: $blue 0 80px 0px 2px inset;
+        border: 1px solid $blue;
+        color: $white;
+    }
+
+    @include mobile {
+        font-size: 14px;
+        padding: 8px 12px;
+        pointer-events: none;
+    }
+
+    &.-blue {
+        border: 1px solid $blue;
+        }
+
+    &.-white {
+        box-shadow: rgba(255, 255, 255, 0) 0 0px 0px 0px inset;
+        color: $white;
+
+        &:hover {
+            box-shadow: rgba(255, 255, 255, 1) 0 80px 0px 2px inset;
+            color: $blue;
+            }
+        }
+    }
+
+
+/******************************************************************************
+ * Links
+*******************************************************************************/
+.a {
+    @include a();
+    }
+.a-link {
+    color: $black;
+    border-bottom: 1px solid transparent;
+    display: inline;
+    transition: color $fast-duration $ease;
+
+    &.is-active {
+        color: $grey-text;
+        }
+
+    p {
+        display: inline;
+        }
+    }
+
+
+/******************************************************************************
+ * Headlines
+*******************************************************************************/
+.h1 {
+    @include h1();
+    }
+.h2 {
+    @include h2();
+    }
+.h3 {
+    @include h3();
+    }
+.h4 {
+    @include h4();
+    }
+
+/******************************************************************************
+ * Misc
+*******************************************************************************/
+.text-block {
+    text-align: left;
+    h2 {
+        margin-bottom: 14px;
+        }
+    p {
+        @include p();
+        margin-bottom: 14px;
+        }
+    &.-pad-right {
+        padding-right: 30px;
+        }
+    }

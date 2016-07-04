@@ -1,0 +1,107 @@
+/******************************************************************************
+ * Fonts: Util
+*******************************************************************************/
+@mixin font-normal() {
+    font-stretch: normal;
+    font-style: normal;
+}
+
+
+/******************************************************************************
+ * Fonts: Sans-serif
+*******************************************************************************/
+@mixin font-sans-text() {
+    font-family: $sans-serif-text;
+    font-weight: 400;
+    @include font-normal();
+}
+
+
+/******************************************************************************
+ * Fonts: Serif
+*******************************************************************************/
+@mixin font-serif-text() {
+    font-family: $serif-text;
+    font-weight: 400;
+    @include font-normal();
+}
+
+
+/******************************************************************************
+ * Type
+*******************************************************************************/
+@mixin meta() {
+    color: $black;
+    font-size: $meta-size;
+    line-height: 1.444444;
+    @include font-sans-text();
+}
+@mixin p() {
+    font-size: $p-size;
+    line-height: 1.66666666;
+    @include font-sans-text();
+}
+@mixin a() {
+    color: $black;
+    display: inline;
+    font-size: $p-size;
+    line-height: 2.22222222;
+    text-decoration: none;
+    @include font-sans-text();
+}
+@mixin h1() {
+    font-size: $h1-size;
+    line-height: 1.32;
+    @include font-serif-text();
+
+    @include mobile {
+        font-size: $h1-size-small;
+        }
+}
+@mixin h2() {
+    font-size: $h2-size;
+    line-height: 1.333333;
+    @include font-serif-text();
+
+    @include mobile {
+        font-size: $h2-size-small;
+        }
+}
+@mixin h3() {
+    font-size: $h3-size;
+    line-height: $h3-line-height;
+    @include font-serif-text();
+}
+@mixin h4() {
+    font-size: $h4-size;
+    line-height: 1.4166666667;
+    @include font-serif-text();
+}
+@mixin li() {
+    padding-left: 20px;
+    @include p();
+}
+@mixin ol-li() {
+    list-style: decimal;
+}
+@mixin ul-li() {
+    list-style: disc;
+}
+
+@mixin mobile {
+  @media (max-width: #{$break-tablet-small - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$break-tablet-small}) and (max-width: #{$break-tablet-medium - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$break-tablet-medium}) {
+    @content;
+  }
+}

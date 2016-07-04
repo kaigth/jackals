@@ -1,0 +1,17 @@
+.background {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: linear-gradient(270deg, rgb(146, 184, 238), rgb(176, 192, 213), rgb(94, 137, 197), rgb(197, 199, 255), rgb(195, 246, 255), rgb(158, 159, 210));
+  background-size: 1200% 1200%;
+  animation: AnimateBG 60s ease infinite;
+  z-index: $z_layer_behind;
+
+  @keyframes AnimateBG {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+}

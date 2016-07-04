@@ -1,0 +1,30 @@
+.slideshow {
+    position: relative;
+    ._container {
+        position: relative;
+    }
+}
+
+.slideshow-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: none;
+    left: 0;
+    opacity: 0;
+    padding-bottom: 80%;
+    width: 100%;
+
+    &.is-transitioning-in {
+        opacity: 1;
+    }
+
+    &.is-transitioning-out {
+        opacity: 0;
+    }
+
+    &.is-active {
+        opacity: 1;
+        display: block;
+    }
+}

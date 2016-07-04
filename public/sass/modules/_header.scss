@@ -1,0 +1,17 @@
+/******************************************************************************
+ * Header
+*******************************************************************************/
+.header {
+    background-color: $white;
+    left: 0;
+    font-size: 0;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: $z_layer_01;
+
+    @include mobile {
+        padding: 14px;
+        }
+    }

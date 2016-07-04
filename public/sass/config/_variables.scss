@@ -1,0 +1,194 @@
+/******************************************************************************
+ * Fonts
+*******************************************************************************/
+
+// Serif
+$serif-text: "Georgia";
+
+// Sans Serif
+$sans-serif-text: "Helvetica";
+
+// Monospace - Code Snippets
+$monospace-text: Pragmata, Menlo, "DejaVu LGC Sans Mono", "DejaVu Sans Mono", Consolas, "Everson Mono", "Lucida Console", "Andale Mono", "Nimbus Mono L", "Liberation Mono", FreeMono, "Osaka Monospaced", Courier, "New Courier", monospace;
+
+
+
+/******************************************************************************
+ * Colors
+*******************************************************************************/
+
+// Grey Tones
+$true-black: #000;
+$black: #121212;
+$white: #fff;
+$dark: #2b2b2b;
+$grey-bg: #f5f5f5;
+$grey-text: #a0a0a0;
+$grey-dark-text: #4f4f4f;
+$grey-link: #807e7e;
+$grey-rule: #d7d7d7;
+$grey-code: #aaa;
+$blue: rgba(61, 71, 96, 1);
+
+
+
+/******************************************************************************
+ * Grid
+*******************************************************************************/
+$grid-length: 12;
+$grid-columns: 12 11 10 9 8 7 6 5 4 3 2 1;
+
+
+
+/******************************************************************************
+ * Spacing
+*******************************************************************************/
+
+// Small
+$bump-size: 80px;
+$nudge-size: 40px;
+
+// Content Blocks
+$expander-one: 90px;
+$expander-two: 160px;
+$expander-three: 250px;
+$expander-mobile: 50px;
+$expander-mobile-tite: 15px;
+
+// Horizontal
+$mobile-padding: 30px;
+$image-padding: 13.671875%;
+$wrapper-padding: 7.03125%;
+$grid-padding: #{"calc( ~\"#{$wrapper-padding} + #{$bump-size}\" )"};
+
+// Grid Walls
+$grid-item-padding: 5.5%;
+$grid-item-padding-static: 55px;
+$grid-item-padding-bottom: #{"calc( ~\"11% + #{$bump-size}\" )"};
+
+
+
+/******************************************************************************
+ * Sizes
+*******************************************************************************/
+
+// Aspects
+$logo-aspect: 5.7142857143;
+$reel-aspect: 41.875%;
+$cinema-aspect: 56.25%;
+
+// Widths
+$quote-width: 1060px;
+$leadin-width: 820px;
+$block-width: 700px;
+$cap-width: 460px;
+$paragraph-link-hover-width: 250px;
+$content-title-width: 420px;
+$logo-width: 115px;
+$logo-intro-width: 144px;
+$player-thumb-width: 260px;
+
+// Heights
+$logo-height: ($logo-width / $logo-aspect) + 0.5px;
+$logo-intro-height: ($logo-intro-width / $logo-aspect) + 0.5px;
+$player-scrub-height: 2px;
+$player-scrub-tall-height: 16px;
+$player-bar-height: 70px;
+$circle-size: 90px;
+$play-button-height: 80px;
+
+
+
+/******************************************************************************
+ * Typography
+*******************************************************************************/
+$p-size: 18px;
+$p-size-medium: 18px;
+$p-size-small: 15px;
+
+$meta-size: 16px;
+$meta-size-small: 14px;
+$meta-size-small-caption: 13px;
+
+$h1-plus-size: 60px;
+$h1-plus-size-medium: 44px;
+$h1-plus-size-small: 40px;
+
+$h1-size: 44px;
+$h1-size-medium: 40px;
+$h1-size-small: 30px;
+
+$h2-size: 40px;
+$h2-size-medium: 34px;
+$h2-size-small: 25px;
+
+$h3-size: 34px;
+$h3-size-medium: 28px;
+$h3-size-small: 22px;
+$h3-line-height: 1.4705882353;
+
+$h4-size: 22px;
+$h4-size-small: 20px;
+
+
+
+/******************************************************************************
+ * iPhone Device Skins
+*******************************************************************************/
+$iphone6-device-width: 430px;
+$iphone6-device-height: 885px;
+$iphone6-screen-width: 375px;
+$iphone6-screen-height: 667px;
+$iphone6-device-aspect-height: percentage( $iphone6-device-height / $iphone6-device-width );
+$iphone6-screen-aspect-width: percentage( $iphone6-screen-width / $iphone6-device-width );
+
+
+
+/******************************************************************************
+ * Breakpoints
+*******************************************************************************/
+$break-desktop-large: 2200px;
+$break-desktop: 1920px;
+$break-laptop-full: 1680px;
+$break-laptop-medium: 1440px;
+$break-ipad-pro-width: 1366px;
+$break-tablet-full: 1280px;
+$break-tablet-medium: 1024px;
+$break-tablet-small: 768px;
+$break-mobile-full: 640px;
+$break-mobile-medium: 480px;
+$break-mobile-small: 320px;
+
+
+
+/******************************************************************************
+ * Animations
+*******************************************************************************/
+$ease: ease;
+$ease-in: ease-in;
+$ease-out: ease-out;
+$ease-in-out: ease-in-out;
+$ease-cubic: cubic-bezier( 0.55, 0.055, 0.675, 0.19 );
+$ease-cubic-sharp: cubic-bezier( 0.77, 0, 0.175, 1 );
+$long-duration: 600ms;
+$base-duration: 400ms;
+$midi-duration: 300ms;
+$fast-duration: 200ms;
+
+
+
+/******************************************************************************
+ * Layering
+*******************************************************************************/
+$z_layer_10: 100;
+$z_layer_09: 90;
+$z_layer_08: 80;
+$z_layer_07: 70;
+$z_layer_06: 60;
+$z_layer_05: 50;
+$z_layer_04: 40;
+$z_layer_03: 30;
+$z_layer_02: 20;
+$z_layer_01: 10;
+$z_layer_behind: -1;
+$z_layer_infront: 1000;

@@ -1,0 +1,113 @@
+/******************************************************************************
+ * Display
+*******************************************************************************/
+.-cinema {
+    padding-bottom: $cinema-aspect;
+    }
+.-exp {
+    padding-bottom: $expander-two;
+    padding-top: $expander-two;
+    }
+.-exp-t {
+    padding-top: $expander-two;
+    }
+.-exp-b {
+    padding-bottom: $expander-two;
+    }
+
+
+
+/******************************************************************************
+ * Background Images
+*******************************************************************************/
+.-cover {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+.-cover--top {
+    background-position: 50% 0;
+    }
+.-cover--right {
+    background-position: 100% 50%;
+    }
+.-cover--bottom {
+    background-position: 50% 100%;
+    }
+.-cover--left {
+    background-position: 0 50%;
+    }
+
+
+
+/******************************************************************************
+ * ProperJS ImageLoader Hooks
+*******************************************************************************/
+
+.-is-lazy-loading {
+    opacity: 0;
+    }
+.-is-lazy-transition {
+    transition: opacity $base-duration $ease-cubic;
+    }
+.-is-lazy-loaded {
+    opacity: 1;
+    }
+.-is-lazy-handled {
+    }
+
+
+
+
+/******************************************************************************
+ * Fills
+*******************************************************************************/
+.-bg--light {
+    background-color: $white;
+    }
+.-bg--dark {
+    background-color: $dark;
+    }
+.-bg--black {
+    background-color: $black;
+    }
+.-bg--true-black {
+    background-color: $true-black;
+    }
+.-bg--blue {
+    background-color: $blue;
+    }
+
+
+
+/******************************************************************************
+ * Typography
+*******************************************************************************/
+.-text--center {
+    text-align: center;
+    }
+.-text--right {
+    text-align: right;
+    }
+.-text--left {
+    text-align: left;
+    }
+.-light {
+    color: $white;
+    }
+.-dark {
+    color: $dark;
+    }
+.-grey {
+    color: $grey-text;
+    }
+
+/******************************************************************************
+ * DOM Visibility
+*******************************************************************************/
+
+.hidden--mobile {
+    @include mobile {
+        display: none !important;
+    }
+}

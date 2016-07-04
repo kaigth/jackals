@@ -1,0 +1,33 @@
+/******************************************************************************
+ * Covers
+*******************************************************************************/
+.cover {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    }
+.cover__wrap {
+    height: 100%;
+    }
+.cover--tease {
+    height: 70vh;
+    }
+.cover--tall {
+    height: 120vh;
+    }
+.cover__title {
+    position: relative;
+    z-index: 2;
+    }
+.cover__image {
+    height: 100%;
+    width: 100%;
+    }
+.cover__screen,
+.cover__content {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    }
