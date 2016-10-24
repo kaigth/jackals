@@ -1,0 +1,12 @@
+{
+    "slideshows": [
+        { "id": "1",
+          "imagePath": "assets/1.jpg",
+          "subtitle": "Rad image 1"
+        }, 
+        { "id": "2",
+          "imagePath": "2.jpg",
+          "subtitle": "Rad image 2"
+        }
+    ]
+}

@@ -21,7 +21,7 @@ npm start
 
 In the second terminal window go to the `public/` directory and type:
 ```
-npm run service
+python -m SimpleHTTPServer 6969
 ```
 
 You are ready to go.

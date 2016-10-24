@@ -25,7 +25,6 @@
   },
   "scripts": {
     "start": "webpack --watch",
-    "service": "python -m SimpleHTTPServer 6969"
   },
   "licenses": [
     {
