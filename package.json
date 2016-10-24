@@ -24,7 +24,7 @@
     "css_file": "./public/styles/app.css"
   },
   "scripts": {
-    "start": "webpack --watch",
+    "start": "webpack --watch"
   },
   "licenses": [
     {
