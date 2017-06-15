@@ -13,15 +13,10 @@ First thing first. Install all of the dependencies:
 npm install
 ```
 
-Once that is complete you are ready to go. open TWO seperate terminals.
-In one terminal type:
+Once that is complete you are ready to go. Open up a terminal and type:
 ```
 npm start
 ```
 
-In the second terminal window go to the `public/` directory and type:
-```
-npm run service
-```
 
 You are ready to go.
