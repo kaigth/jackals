@@ -1,47 +1,43 @@
-var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var path = require('path');
+var webpack = require( 'webpack' );
+var path = require( 'path' );
+
+var APP_DIR = path.join( __dirname, '..', 'app' );
 
 module.exports = {
-  entry: {
-    app: './public/app/index.js'
-  },
-
-  resolve: {
-    root: __dirname
-  },
-
-  output: {
-    path: __dirname + '/public',
-    filename: 'js/[name].js'
-  },
-
+  entry: [ './public/app/index.js' ],
   module: {
-    loaders: [
-      {
-        test: /app\/.*\.js$/,
-        exclude: '/node_modules/|dist|vendor/',
-        loader: 'babel-loader',
-        query: {
-          presets: ['es2015']
-        }
-      },
+    rules: [
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract(
-          'css?sourceMap!' +
-          'sass?sourceMap'
-        ),
-        exclude: /node_modules|dist/
+        use: [{
+          loader: "style-loader"
+        }, {
+          loader: "css-loader"
+        }, {
+          loader: "sass-loader"
+        }]
+      },
+      {
+        test: /\.js$/,
+        use: 'eslint-loader',
+        enforce: 'pre',
+        include: APP_DIR,
+        exclude: '/node_modules/'
+      },
+      {
+        test: /\.js$/,
+        use: ['babel-loader'],
+        include: APP_DIR,
+        exclude: '/node_modules/'
       }
     ]
   },
-
-  plugins: [
-    new ExtractTextPlugin('css/app.css')
-  ],
-
-  eslint: {
-    configFile: '.eslintrc'
-  }
+  output: {
+    filename: 'app.js',
+    path: path.join( __dirname, '..', 'build' ),
+    publicPath: 'static/',
+  },
+  resolve: {
+    extensions: [ '.js' ]
+  },
 };
